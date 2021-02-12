@@ -1,1 +1,173 @@
-<!--  Paste underneat your HTML  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f4a6667233.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  </head>
+
+
+
+  <body>
+    <div class="main">
+      <header>
+        <a href="https://powercoders.org/" target="_blank"><image class="img-nav" src="images/download.png" width="70px"></image></a>
+      </header>
+        <nav class="navs">
+          <div class="navs_container">
+          <ul>
+              <button class="btn-nav"><a href="#home">Home</a><li></li></button>
+              <button class="btn-nav"><a href="#Work">Work</a><li></li></button>
+              <button class="btn-nav"><a href="#funny">Fun</a><li></li></button>
+              <button class="btn-nav"><a href="#hackera">Contact</a><li></li></button>
+            </ul>
+          </div>
+        </nav>
+    </div>  
+
+
+    <div class="box1" id="home">
+      <h1>Daniel Alvarado</h1>
+      <h2>Junior Web Developer Trainee</h2>
+      <div>
+        <img class="profile-image-round" src="images/daniel profile.jpg" alt="profile picture">
+      <div></div><a href="images/CV Daniel ALVARADO.pdf" target="_blank"><button class="aboutme">About Me</button></a></div>
+      </div>
+    </div>
+
+    <div class="box2" id="Work">
+      <h2 class="h2-1">Work and projects</h2>
+      <p> My passion is <strong>challenges</strong>, I like troubles and find a way to resolve the issues is what i live for.</p>
+      <p> I worked as Sales Senior Supervisor at a Call Center where I was shown a little part of programming software.</p>
+      <p> 3 years ago I started to work as a Data analyst where I was able to create a project where we are able to automatize all data proccess into a dashboard.</p>
+        <div class="picture-card"><img class="fun-pic" src="images/work1.jpg" alt="glasses"></div>
+        <div class="picture-card"><a href="https://www.fusionbposervices.com/"><img class="fun-pic" src="images/images.jpg" alt="work"></a> </div>
+        <div class="picture-card"><img class="fun-pic" src="images/work2.jpg" alt="glasses"></div>
+      <br><a href="https://www.linkedin.com/in/daniel-alvarado-962698178/" target="_blank"><button id="btn-work">Check me out</button></a>
+    </div>
+
+    <div class="box3" id="funny">
+      <h2 class="h2-1">My life outside of work</h2>
+      <p>You may think that I like party a lot but I prefer spending time with family and friends.</p>
+      <p>I'm not an outgoing person but <strong>love</strong> to make some new friends.</p><br>
+        <div class="picture-card"><img class="fun-pic" src="images/fun1.jpg" alt="sports"></div>
+        <div class="picture-card"> <img class="fun-pic" src="images/fun2.jpg" alt="hostel party"></div>
+        <div class="picture-card"><img class="fun-pic" src="images/fun3.jpg" alt="partyy"></div>
+      <br><a href="https://www.youtube.com/watch?v=1fjhIWJSxfw" target="_blank"><button id="btn-fun">Let's Enjoy together</button></a>
+    </div>
+
+    <div class="information">
+      <div class="overlay"></div>
+        <img src="images/daniel profile.jpg" class="mobile">
+      <div id="circle">
+        <div class="feature one" style="d   " id="one">
+          <a href="#video1" id="btn1"><i class="fas fa-futbol"></i></a>
+        </div>
+        <div class="feature two" id="two">
+          <a href="#video2" id="btn2"><i class="fas fa-laptop-code"></i></a>
+        </div>
+        <div class="feature three" id="three">
+          <a href="#video3"><i class="fas fa-basketball-ball"></i></a>
+        </div>
+        <div class="feature four" id="four">
+          <a href="#video4"><i class="fas fa-gamepad"></i></a>
+        </div>
+      </div>
+      <div class="sqr-box" id="icon-text">
+        <h1>Have Fun playing around with the videos and icons</h1>
+      </div>
+    </div>          
+    <div class="controls">
+      <img src="images/computer-icons-arrow-font-arrow.jpg" id="upBtn">
+      <h3>Features</h3>
+      <img src="images/computer-icons-arrow-font-arrow.jpg" id="downBtn">
+    </div>
+  
+    <script>
+
+      var circle = document.getElementById("circle")
+      var upBtn = document.getElementById("upBtn")
+      var downBtn = document.getElementById("downBtn")
+      var iconText = document.getElementById('icon-text')
+      var one =  document.getElementById('one')
+      var two =  document.getElementById('two')
+      var three =  document.getElementById('three')
+      var four =  document.getElementById('four')
+
+      var rotateValue = circle.style.transform;
+      var rotateSum;
+
+      upBtn.onclick = function()
+      {
+          rotateSum = rotateValue + "rotate(-90deg)";
+          circle.style.transform = rotateSum;
+          rotateValue = rotateSum;
+      }
+      downBtn.onclick = function()
+      {
+          rotateSum = rotateValue + "rotate(90deg)";
+          circle.style.transform = rotateSum;
+          rotateValue = rotateSum;
+      }
+
+      one.addEventListener('click', (event) => {
+      iconText.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/KCQF7jdMa7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' 
+      })
+      two.addEventListener('click', (event) => {
+      iconText.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/Z-VfaG9ZN_U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' 
+      })
+      three.addEventListener('click', (event) => {
+      iconText.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/2CHT0q8QBy4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' 
+      })
+      four.addEventListener('click', (event) => {
+      iconText.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/S4VJ29yH2Kc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' 
+      }) 
+    </script>
+    
+    <div class="box4" id="Work-related">
+      <h2 class="title-inv">Relationship Network</h2>
+      <h3 class="title-inv"> My passion ishallenges I like troubles and find a way to resolve the issues is what i live for.</h3>
+      
+      <div class="pic-container"> 
+        <div class="picture-card1">
+            <img class="relax-pic" src="images/work1.jpg" alt="glasses">
+        </div>
+          <p>"Daniel is a Great person tyo work with and he is allways trying to improve anything that he learn by all means but all is commited to any project presented."</p>
+          <small>Joseph Guardiola</small>
+          <small>-Man City Coach-</small>
+      </div>
+
+      <div class="pic-container">
+        <div class="picture-card1">
+            <img class="relax-pic" src="images/images.jpg" alt="work">
+          </a>
+        </div>
+          <p>"Daniel is a Great person tyo work with and he is allways trying to improve anything that he learn by all means but all is commited to any project presented."</p>
+          <small>Joseph Guardiola</small>
+          <small>-Man City Coach-</small>
+        </div> 
+
+        <div class="pic-container">
+          <div class="picture-card1">
+            <img class="relax-pic" src="images/work2.jpg" alt="glasses">
+          </div>
+            <p>"Daniel is a Great person tyo work with and he is allways trying to improve anything that he learn by all means but all is commited to any project presented."</p>
+            <small>Joseph Guardiola</small>
+            <small>-Man City Coach-</small>
+        </div>  
+    </div>
+
+
+    <div class="box5" id="hackera">
+      <h2 class="h2-1">Follow me on:</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/daniel310787/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/Menjivar0731" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://github.com/Daniel310787" target="_blank"><i class="fab fa-github-square"></i></a></li>
+      </ul>
+    </div>
+  </body>
+</html>
