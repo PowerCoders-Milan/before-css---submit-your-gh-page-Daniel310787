@@ -1,1 +1,463 @@
-/* Paste underneat your CSS */
+body {
+  background-image: url(images/background_16_WabjYvZ.wide.jpeg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+h1 {
+  font-family: 'Tangerine', serif;
+  font-size: 95px;
+  text-shadow: 4px 4px 4px #aaa;
+  text-align: center;
+  margin-bottom: -50px;
+  margin-top: 0px;
+}
+
+.aboutme {
+    display: inline-block;
+    background-color: white;
+    transition: 1s;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 15px 32px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+} 
+
+.aboutme:hover{
+  background: radial-gradient(white,black);
+  transition: 1.5s;
+}
+
+.picture-card {
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+}
+
+li > a {
+  display: inline-block;
+  position: relative;
+  right: -20px;
+  font-size: 40px;
+  letter-spacing: 20px;
+  color: rgba(39, 111, 191, 1);
+}
+
+li > a:hover {
+  color: white;
+}
+
+h2 {
+  font-family: 'Tangerine', serif;
+  text-align: center;
+  font-size: 65px;
+  margin-bottom: 10px;
+}
+
+.h2-1{
+  font-family: 'Tangerine', serif;
+  text-align: center;
+  font-size: 85px;
+  margin-top: -10px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.profile-image-round {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+
+#pointless-btn {
+  background: black;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 1s;
+}
+
+#secret {
+  color: lightblue;
+  transition: 1s;
+}
+#pointless-btn:hover {
+  background: white
+}
+
+#pointless-btn:focus {
+  outline-color: white
+}
+
+#btn-work {
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+#btn-work:hover {
+  background: white;
+  color: blue;
+  transition: 0.2s;
+}
+
+#btn-fun {
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+#btn-fun:hover {
+  background: white;
+  color: blue;
+  transition: 0.2s;
+}
+
+.fun-pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.profile-image-round:hover {
+  width: 210px;
+  height: 210px;
+  transition: 0.1s;
+  animation: animated_div 5s 1;
+}
+
+.box1{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10em 0;
+  border-radius: 4px;                        
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+.box1:hover {
+  background: transparent;
+  color: white;
+
+}
+.box2{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px;                             
+  border-radius: 4px;                        
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+.box2:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.box3{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px;                             
+  border-radius: 4px;                        
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+.box3:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.box4{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px;                             
+  border-radius: 4px;                        
+  margin-top: 100px;
+  margin-bottom: -150px;
+  transition: 0.2s;
+  color: transparent;
+  text-shadow: 4px 4px 4px #aaa;
+}
+.box4:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: none;
+}
+.box5{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px;                             
+  border-radius: 4px;                        
+  margin-bottom: 10px;
+  transition: 0.2s;
+  margin-top: 10em;
+}
+.box5:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+ul {
+  list-style:none;
+  padding: 0;
+}
+
+.btn-nav{
+  display: inline-block;
+  background-color:rgba(0, 0, 0, .50);
+  transition: 1s;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: -10px;
+  font-size: 20px;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: white;
+}
+.btn-nav:hover{
+  background: white;
+  color: black;
+  font-weight: bolder;
+}
+.btn-nav:focus{
+  background-color: transparent;
+  color: aqua;
+  font-weight: bolder;
+}
+nav{
+  position: fixed;
+  
+}
+.navs{
+  height: 80px;
+  scroll-padding-block-end: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  margin-left: 59em;
+  margin-right: em;
+  background-color: transparent;
+  float: right;
+}
+.img-nav{
+  object-fit: cover;
+  border-radius: 50%;
+  position: fixed;
+}
+a { text-decoration: none;
+  color: white;
+ }
+a:hover{
+  color: black
+}
+
+.information{
+  width: 800px;
+  height: 800px;
+  position: relative;
+  left: -10%;
+  margin-bottom: -200px;
+}
+
+#circle{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 15em;
+  left: 15em;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.feature img{
+  width: 150px;    
+}
+
+.feature{
+  position: absolute;
+  display: flex;
+  color: white;
+}
+
+.feature div{
+  margin-left: 30px;
+}
+.feature div p{
+  margin-top: 8px;
+}
+.one{
+  left: 3em;
+  top: 600px;
+  right: 20px;
+  transform: rotate(90deg);
+}
+.two{
+  top: 7em;
+  left: 450px;
+  transform: rotate();
+}
+.three{
+  bottom: 550px;
+  left: 5px;
+  right: 50px;
+  transform: rotate(-90deg);
+}
+.four{
+  bottom: 120px;
+  right: 450px;
+  transform: rotate(180deg);
+
+}
+
+i{
+  color: white;
+  font-size: 85px;
+  letter-spacing: 50px;
+}
+i:hover{
+  color: blue;
+}
+
+.mobile{
+  width: 200px;
+  object-fit:cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.controls{
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  bottom: 10em;
+  left: 25em;
+}
+.controls h3{
+  margin: 10px 0;
+  color: white;
+}
+#upBtn{
+  width: 25px;
+  cursor: pointer;
+  transform: rotate(90deg);
+  color: white;
+}
+#downBtn{
+  width: 25px;
+  cursor: pointer;
+  transform: rotate(-90deg);
+  color: white;
+}
+
+.overlay{
+  width: 0;
+  height: 0;
+  border-top: 400px solid #fff;
+  border-right: 400px solid transparent;
+  border-bottom: 400px solid white;
+  border-left: 400px solid white;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sqr-box{
+ width: 500px;
+ height: 400px;
+ color: transparent;
+ left: 850px;
+ top: 250px;
+ position: absolute;
+ color: white;
+}
+
+.sqr-box h1{
+  color: black;
+  font-size: 85px;
+  position: absolute;
+  top: 55px;
+}
+
+.sqr-box h1:hover{
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.pic-container{
+  width: 260px;
+  height: 500px;
+  display: inline-block;
+  margin-top: 25px;
+  
+  border-radius: 3%;
+}
+
+.pic-container:hover{
+  background-color: rgba(1, 1, 1, .50);
+
+}
+
+.picture-card1{
+  width: 200px;
+  height: 200px;
+  margin-top: 25px;
+  margin-left: 28px;
+}
+
+.relax-pic{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+
